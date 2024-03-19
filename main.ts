@@ -236,8 +236,97 @@ else{
 }
 
 // Question 29 (favorite fruit)
+let favoriteFruit:string[] = ["apple","grapes","mango"];
+
+if (favoriteFruit.includes("mango")) {
+    console.log("you like mango!");
+}
+if(favoriteFruit.includes("apple")){
+    console.log("you like apple!");
+
+}
+// Question 30 (Hello Admin)
+
+let userName : string[]=["Admin","user1","user2"];
+ 
+for(let i=0; i<userName.length; i++){
+console.log(`Hello ${userName[i]}`)
+
+}
+//Question 31 ( No user)
+let emptyUser:string[]=[]
+console.log(emptyUser);
+
+//Question 32 (Checking Usernames)
+let cUser:string[]=["user1","user2","user3","user4"];
+
+let nUser : string[]=["user5","user2","user6"]
+
+nUser.forEach(nUser =>{
+    if(cUser.some(cUser =>cUser.toLowerCase()===nUser.toLowerCase())) {
+        console.log(`${nUser} create new username.`);
+    }else{
+        console.log(`${nUser} is available.`)
+    }
+})
+
+//Question 33 (ordinal number)
+let number:number[]=[1,2,3,4,5,6]
+
+number.forEach(number=>{
+    let suffix= "th"
+    if(number=== 1){suffix ="st"}
+    else if (number ===2){suffix="nd"}
+    else if (number ===3){suffix ="rd"}
+    console.log(`${number}${suffix}`);
+})
+
+//Question 34 (Pizzas)
+let pizza:string[]=["Arabic ranch","Fajita","Chiken Tarzen"]
+pizza.forEach(pizza=>{
+    console.log(`I like pizza ${pizza}`)
+})
+console.log(`but ${pizza[1]} like very most`)
+
+//Question 35(Animals)
+let animal:string[]=["cat","dog","cow"]
+animal.forEach(animal =>{
+    console.log(`${animal},would make a great pet`)
+})
 
 
+//Question 36 (T-shirt)
 
+function t_Shirt(size:string,message:string){
+    console.log(`making a ${size} t-shirt with the message "${message}" print on it `)
+}
+t_Shirt("medium","code is life")
+
+//Question 37 (large t-shirt)
+
+function t_shirt(size:string,message:string){
+    console.log(`making ${size} with the ${message} print on it`)
+}
+t_shirt("large","code is life");
+
+//Question 38 ()
+function cities(Name:string,country:string){
+    console.log(`${Name} is the city of ${country}`)
+}
+cities("karachi","Pakistan");
+cities("tokyo","Japan");
+
+
+//Question 39 (city name)
+ function city_country(name:string,country:string){
+    console.log(name + country)
+ }
+city_country("Islamabad","Pakistan")
+
+// Question 40 (Album)
+ function album(artist:string,title:string,track:number){
+    console.log(`The famous artist is ${artist} title ${title} and track ${track}`)
+ }
+album("Atif","singer",6)
 
 
