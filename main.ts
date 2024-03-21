@@ -329,4 +329,30 @@ city_country("Islamabad","Pakistan")
  }
 album("Atif","singer",6)
 
+//Question 41
+let magicians:string[]=["Ali","Anas","Hamza"];
 
+magicians.forEach(magicians=>{console.log( magicians +"magician")});
+
+//Question 42 (Great magicians)
+
+magicians.forEach(magicians=>{console.log(`${magicians} "The Great magician"`)});
+ 
+//Question 43 (Unchanged magicians)
+
+magicians.forEach(magicians=>{console.log(`${magicians} "The Orignal magician"`)});
+
+
+//Question 44(sandwiches)
+
+function sandwich(...item:string[]){
+    console.log(`Cook a sandwich with ingredients  ${item.join(', ')}`);
+}
+sandwich("cheese","kabab","cocumber","ketchup");
+
+//Question 45 (cars)
+
+function cars(model:number,name:string,color:string){
+    console.log(`Details about car name: ${name} \nmodel: ${model}\n color: ${color} `)
+};
+cars(2025,"corolla","black")
